@@ -1,17 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+
+header {
+  font-family: 'Overpass Mono', monospace;
+  font-size: 1.5em;
+  margin: 5em auto 7em;
+  width: 80vw;
+  text-align: center;
+}
+
 #container {
   margin: 3em auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 3em;
+  row-gap: 3em;
   width: 80vw;
+  justify-content: center;
 }
 
 .icon-folder {
-  box-shadow: 0 0 1px #333;
-  width: 15em;
-  height: 10em;
-  box-shadow: 0 0 10em
-    rgba(0,0,0,.5) inset;
+  width: 12em;
+  height: 8em;
+  box-shadow:
+    0 0 10em rgba(0,0,0,.5) inset,
+    7px 14px 8px #444;
   background: #557;
   border-radius: 0 10% 3% 3%;
   position: relative;
+  transition: 450ms;
 }
 
 .icon-folder::before{
@@ -57,12 +73,12 @@
   position: relative;
   top: -20%;
   display: block;
-  transition: 200ms;
+  transition: 250ms;
 }
 
 .icon-folder:hover {
   transform: translateY(10%);
-  transition: 200ms;
+  transition: 300ms;
 }
 
 .icon-folder:hover::after {
@@ -71,6 +87,6 @@
     rotateX(-48deg);
   transform-origin: bottom center;
   transform-style: preserve-3d;
-  transition: 300ms;
+  transition: 250ms;
 }
 
